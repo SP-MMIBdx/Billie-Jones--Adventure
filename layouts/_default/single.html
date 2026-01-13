@@ -22,4 +22,8 @@
     {{ if .Params.suivantbutton }}
     {{ partial "suivantbutton.html" .Params.suivantbutton }}
   {{ end }}
+
+      {{ if .Params.buttonsuivantcache }}
+    {{ partial "buttonsuivantcache.html" .Params.buttonsuivantcache }}
+  {{ end }}
 {{ end }}
