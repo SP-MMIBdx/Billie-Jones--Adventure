@@ -13,3 +13,14 @@
     {{ end }}
   </div>
 {{ end }}
+
+
+{{ if .Suivant }}
+  <div class="Suivant">
+    {{ range .Suivant }}
+      <div class="Suivant">
+        {{ partial "button.html" . }}
+      </div>
+    {{ end }}
+  </div>
+{{ end }}
