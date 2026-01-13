@@ -1,0 +1,7 @@
+ignoreLogs: ['warning-goldmark-raw-html']
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+title: >-
+  Gaîté Lyrique

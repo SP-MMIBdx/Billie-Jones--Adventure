@@ -1,0 +1,17 @@
+{{ define "main" }}
+  {{ if .Params.title }}
+    <h1>{{ .Params.title }}</h1>
+  {{ end }}
+
+  {{ if .Params.description }}
+    <p class="description">{{ .Params.description }}</p>
+  {{ end }}
+
+  {{ if .Params.question }}
+    {{ partial "question.html" .Params.question }}
+  {{ end }}
+
+  {{ if .Params.button }}
+    {{ partial "button.html" .Params.button }}
+  {{ end }}
+{{ end }}

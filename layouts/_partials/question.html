@@ -1,0 +1,15 @@
+{{ if .text }}
+  <div class="question">
+    <p>{{ .text }}</p>
+  </div>
+{{ end }}
+
+{{ if .answers }}
+  <div class="answers">
+    {{ range .answers }}
+      <div class="answer">
+        {{ partial "button.html" . }}
+      </div>
+    {{ end }}
+  </div>
+{{ end }}
