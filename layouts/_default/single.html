@@ -18,4 +18,8 @@
     {{ if .Params.choice }}
     {{ partial "choice.html" .Params.choice }}
   {{ end }}
+
+    {{ if .Params.suivant }}
+    {{ partial "Suivant.html" .Params.suivant }}
+  {{ end }}
 {{ end }}

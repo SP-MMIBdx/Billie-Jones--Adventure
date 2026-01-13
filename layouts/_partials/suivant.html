@@ -1,0 +1,9 @@
+{{ if .suivant2 }}
+  <div class="suivant2">
+    {{ range .suivant2 }}
+      <div class="suivant2">
+        {{ partial "button.html" . }}
+      </div>
+    {{ end }}
+  </div>
+{{ end }}
