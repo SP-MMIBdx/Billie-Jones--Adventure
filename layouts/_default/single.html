@@ -19,7 +19,7 @@
     {{ partial "choice.html" .Params.choice }}
   {{ end }}
 
-    {{ if .Params.suivant }}
-    {{ partial "Suivant.html" .Params.suivant }}
+    {{ if .Params.suivantbutton }}
+    {{ partial "suivantbutton.html" .Params.suivantbutton }}
   {{ end }}
 {{ end }}
