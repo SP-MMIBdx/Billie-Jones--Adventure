@@ -1,0 +1,82 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.bonjour-page-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.7); // adjust darkness here
+  z-index: 0;
+}
+
+.bonjour-page {
+  overflow: hidden;
+  background-image: url("/images/tableau foret.svg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Page wrapper */
+.bonjour-page-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* =========================
+   Centered text
+   ========================= */
+.bonjour-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 60ch;
+
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  font-family: 'LEMON MILK', sans-serif;
+  color: white;
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  line-height: 1.4;
+
+  z-index: 2;
+}
+
+/* =========================
+   Bottom-right SVG
+   ========================= */
+.bonjour-overlay-svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: clamp(240px, 30vw, 600px);
+  height: auto;
+
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* =========================
+   Top-left branches
+   ========================= */
+.bonjour-branches {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: clamp(220px, 25vw, 520px);
+  height: auto;
+
+  z-index: 1;
+  pointer-events: none;
+}

@@ -47,7 +47,10 @@
   {{ if .Params.split }}
       {{ partial "split.html" .Params.split }}
     {{ end }}
-
+    
+{{ if .Params.bonjour }}
+  {{ partial "bonjour.html" .Params.bonjour }}
+{{ end }}
 
   {{ if .Params.choice }}
     {{ partial "choice.html" .Params.choice }}
