@@ -1,13 +1,21 @@
 <div class="split-page">
-  {{ if .text }}
-    <p class="split-text">{{ .text }}</p>
-  {{ end }}
 
   <div class="split-container">
-    {{ range .answers }}
-      <a href="{{ .url }}" class="split-item" style="background-image: url('{{ .image }}');">
-        <span>{{ .text }}</span>
+    {{ range $index, $answer := .answers }}
+      <a href="{{ $answer.url }}" class="split-item" style="background-image: url('{{ $answer.image }}');">
+        <div class="split-item-content">
+          <p class="split-item-description">{{ $answer.description }}</p>
+          <span class="split-item-text">{{ $answer.text }}</span>
+        </div>
       </a>
     {{ end }}
   </div>
+
+  <!-- Instruction at bottom left -->
+  {{ if .text }}
+    <p class="split-instruction">{{ .text }}</p>
+  {{ end }}
+
+  <!-- Static SVG overlay on the right -->
+  <img src="/images/billie-v2.png" class="split-overlay-svg" alt="Decoration">
 </div>
