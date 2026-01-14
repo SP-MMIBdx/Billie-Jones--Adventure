@@ -23,7 +23,7 @@
 
 
   {{ if .Params.title }}
-    <h1>{{ .Params.title }}</h1>
+    <h1 class="main-title">{{ .Params.title }}</h1>
   {{ end }}
 
   {{ if .Params.description }}
@@ -40,6 +40,7 @@
   {{ end }}
 
     {{ if .Params.buttonstart }}
+   <!-- <div class="buttonstart-container buttonstart-container--branchright"> -->
     {{ partial "buttonstart.html" .Params.buttonstart }}
   {{ end }}
 

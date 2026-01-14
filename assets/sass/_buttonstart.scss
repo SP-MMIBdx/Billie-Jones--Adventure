@@ -1,12 +1,13 @@
 .buttonstart {
     color: red;
 
-    background-image: url("/images/bouton commencer et acceuil.svg");
+    //background-image: url("/images/bouton commencer et acceuil.svg");
     position: relative;
     top: 0%;
     left: 50%;
     z-index: 1;
-    padding: 3rem 3rem;
+    padding: 1rem 2rem;
+    background-color: wheat;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,5 +16,39 @@
     font-family: 'Arial', sans-serif;
     text-align: center;
     text-decoration: none;
+    border: 3px solid brown;
+    border-radius: 8px;
 
+    &:after {
+        content: "";
+        background-image: url("/images/bouton commencer et acceuil.svg");
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40PX;
+        height: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        transform: translateX(100%);
+    }
+}
+
+.buttonstart-container {
+position: relative;
+&--branchright {
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    // add after pseudo-element for decoration
+}
+&--branchleft {
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    // add after pseudo-element for decoration
+}
 }

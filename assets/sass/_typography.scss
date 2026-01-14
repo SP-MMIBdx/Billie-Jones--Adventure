@@ -1,3 +1,127 @@
+@font-face {
+  font-family: 'LEMON MILK';
+  src: url('/static/fonts/Lemon_Milk/LEMONMILK-Light.woff2') format('woff2'),
+       url('/static/fonts/Lemon_Milk/LEMONMILK-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LEMON MILK';
+  src: url('/static/fonts/Lemon_Milk/LEMONMILK-Regular.woff2') format('woff2'),
+       url('/static/fonts/Lemon_Milk/Lemon_Milk/LEMONMILK-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LEMON MILK';
+  src: url('/static/fonts/Lemon_Milk/Lemon_Milk/LEMONMILK-Medium.woff2') format('woff2'),
+       url('/static/fonts/Lemon_Milk/Lemon_Milk/LEMONMILK-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LEMON MILK';
+  src: url('/static/fonts/Lemon_Milk/Lemon_Milk/LEMONMILK-Bold.woff2') format('woff2'),
+       url('/static/fonts/Lemon_Milk/Lemon_Milk/LEMONMILK-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italics */
+
+@font-face {
+  font-family: 'LEMON MILK';
+  src: url('/static/fonts/Lemon_Milk/Lemon_Milk/LEMONMILK-LightItalic.woff2') format('woff2'),
+       url('/static/fonts/Lemon_Milk/Lemon_Milk/LEMONMILK-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LEMON MILK';
+  src: url('/static/fonts/Lemon_Milk/Lemon_Milk/LEMONMILK-RegularItalic.woff2') format('woff2'),
+       url('/static/fonts/Lemon_Milk/Lemon_Milk/LEMONMILK-RegularItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LEMON MILK';
+  src: url('/static/fonts/Lemon_Milk/Lemon_Milk/LEMONMILK-MediumItalic.woff2') format('woff2'),
+       url('/static/fonts/Lemon_Milk/Lemon_Milk/LEMONMILK-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LEMON MILK';
+  src: url('/static/fonts/Lemon_Milk/Lemon_Milk/LEMONMILK-BoldItalic.woff2') format('woff2'),
+       url('/static/fonts/Lemon_Milk/Lemon_Milk/LEMONMILK-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('/static/fonts/Coolvetica/Coolvetica-Regular.woff2') format('woff2'),
+       url('/static/fonts/Coolvetica/Coolvetica-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('/static/fonts/Coolvetica/Coolvetica-Italic.woff2') format('woff2'),
+       url('/static/fonts/Coolvetica/Coolvetica-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('/static/fonts/Coolvetica/Coolvetica-HeavyComp.woff2') format('woff2'),
+       url('/static/fonts/Coolvetica/Coolvetica-HeavyComp.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Separate families for stylistic variants */
+@font-face {
+  font-family: 'Coolvetica Condensed';
+  src: url('/static/fonts/Coolvetica/Coolvetica-Cond.woff2') format('woff2'),
+       url('/static/fonts/Coolvetica/Coolvetica-Cond.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Coolvetica Cram';
+  src: url('/static/fonts/Coolvetica/Coolvetica-Cram.woff2') format('woff2'),
+       url('/static/fonts/Coolvetica/Coolvetica-Cram.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
+  $text-color: #333;
+  color: $text-color;
   font-family: sans-serif;
 }
+
