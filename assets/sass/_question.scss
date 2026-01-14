@@ -85,4 +85,57 @@ position: relative;
   transform: scale(0.94);
 }
 
+.suivantbutton {
+  display: inline-block;          // allows margin auto
+  padding: 1rem 2rem;
+  background-color: #FAEBDC;
+  color: black;
+  font-family: 'LEMON MILK', sans-serif;  // your title font
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid #d19f61;
+  border-radius: 8px;
+  position: relative;
+  transition: transform 0.12s ease, background-color 0.12s ease;
+
+  &:active {
+    transform: scale(0.95);       // simple press animation
+    background-color: #e7d2b8;
+  }
+}
+
+.buttonaccueil {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #FAEBDC;
+  color: black;
+  font-family: 'LEMON MILK', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid #d19f61;
+  border-radius: 8px;
+  position: relative;
+  transition: transform 0.12s ease, background-color 0.12s ease;
+
+  &:active,
+  &.is-clicked {
+    transform: scale(0.95);
+    background-color: #e7d2b8;
+  }
+
+  // Optional decoration
+  &::after {
+    content: "";
+    position: absolute;
+    right: -40px;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    background: url("/images/home_icon.svg") no-repeat center / contain;
+    pointer-events: none;
+  }
+}
+
 // ask alexis why when deleting background it stays red upon refresh
