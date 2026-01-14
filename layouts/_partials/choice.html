@@ -7,11 +7,9 @@
 {{ if .answers }}
   <div class="answers">
     {{ range .answers }}
-      <div class="answers">
+      <div class="answer">
         {{ partial "button.html" . }}
       </div>
     {{ end }}
   </div>
 {{ end }}
-
-<!-- {{ . }} to debug tables -->

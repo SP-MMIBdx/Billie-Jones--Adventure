@@ -3,5 +3,82 @@
     color: white;
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.button {
+    color: black;
+
+    //background-image: url("/images/bouton commencer et acceuil.svg");
+    position: relative;
+    z-index: 1;
+    padding: 1rem 2rem;
+    background-color: #FAEBDC;
+    font-size: 1rem;
+    font-family: 'LEMON MILK', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border: 3px solid #d19f61;
+    border-radius: 8px;
+
+    &:after {
+        content: "";
+        background-image: url("/images/bouton commencer et acceuil.svg");
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40PX;
+        height: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        transform: translateX(100%);
+    }
+}
+
+.button-container {
+position: relative;
+&--branchright {
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    // add after pseudo-element for decoration
+}
+&--branchleft {
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    // add after pseudo-element for decoration
+}
+}
+
+.answers {
+  display: flex;
+  flex-direction: column; // or row
+  align-items: center;
+  gap: 1rem;
+}
+
+.answer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button,
+.buttonstart {
+  transition: transform 0.08s ease;
+}
+
+.button:active,
+.buttonstart:active {
+  transform: scale(0.94);
+}
 
 // ask alexis why when deleting background it stays red upon refresh
