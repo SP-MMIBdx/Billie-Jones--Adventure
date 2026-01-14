@@ -1,4 +1,13 @@
 {{ define "main" }}
+
+  {{ if .Params.css }}
+    {{ $css := resources.Get (printf "css/%s" .Params.css) }}
+    {{ if $css }}
+      <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+    {{ end }}
+  {{ end }}
+
+
   {{ if .Params.title }}
     <h1>{{ .Params.title }}</h1>
   {{ end }}
@@ -6,6 +15,8 @@
   {{ if .Params.description }}
     <p class="description">{{ .Params.description }}</p>
   {{ end }}
+
+    {{ .Content }}
 
   {{ if .Params.question }}
     {{ partial "question.html" .Params.question }}
@@ -30,4 +41,16 @@
         {{ if .Params.buttonaccueil }}
     {{ partial "buttonaccueil.html" .Params.buttonaccueil }}
   {{ end }}
+
+  {{ if .Params.jquery }}
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{{ end }}
+
+<!-- Charger le JS personnalisé -->
+{{ if .Params.js }}
+  {{ $js := resources.Get (printf "js/%s" .Params.js) }}
+  {{ if $js }}
+    <script src="{{ $js.RelPermalink }}"></script>
+  {{ end }}
+{{ end }}
 {{ end }}

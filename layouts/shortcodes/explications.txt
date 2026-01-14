@@ -1,0 +1,8 @@
+Shortcodes
+
+Il s'agit du contenu qui doit être affiché sur ta page, ce n'est pas une configuration, donc les shortcodes doivent être mis en dehors des ---
+
+C'est le contenu réel de la page
+Ce qui sera affiché à l'utilisateur
+Peut contenir du texte, des images, des shortcodes, etc.
+Est rendu par {{ .Content }} dans le layout
