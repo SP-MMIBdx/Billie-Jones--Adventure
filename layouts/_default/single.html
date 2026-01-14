@@ -39,7 +39,11 @@
     {{ partial "button.html" .Params.button }}
   {{ end }}
 
-    {{ if .Params.choice }}
+    {{ if .Params.buttonstart }}
+    {{ partial "buttonstart.html" .Params.buttonstart }}
+  {{ end }}
+
+  {{ if .Params.choice }}
     {{ partial "choice.html" .Params.choice }}
   {{ end }}
 
