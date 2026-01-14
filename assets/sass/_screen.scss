@@ -33,3 +33,12 @@ body.painting-4 {
   color: #ffffff;
 }
 
+body.painting-5 {
+  background-image: url("/images/painting-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; // optional
+  color: #fff;
+}
+
