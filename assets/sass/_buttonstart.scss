@@ -1,5 +1,5 @@
 .buttonstart {
-    color: red;
+    color: black;
 
     //background-image: url("/images/bouton commencer et acceuil.svg");
     position: relative;
@@ -7,16 +7,16 @@
     left: 50%;
     z-index: 1;
     padding: 1rem 2rem;
-    background-color: wheat;
+    background-color: #FAEBDC;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border: none;
     font-size: 1rem;
-    font-family: 'Arial', sans-serif;
+    font-family: 'LEMON MILK', sans-serif;
     text-align: center;
     text-decoration: none;
-    border: 3px solid brown;
+    border: 3px solid #d19f61;
     border-radius: 8px;
 
     &:after {
