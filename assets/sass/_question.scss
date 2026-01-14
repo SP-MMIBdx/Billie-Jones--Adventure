@@ -71,4 +71,14 @@ position: relative;
   justify-content: center;
 }
 
+.button,
+.buttonstart {
+  transition: transform 0.08s ease;
+}
+
+.button:active,
+.buttonstart:active {
+  transform: scale(0.94);
+}
+
 // ask alexis why when deleting background it stays red upon refresh
