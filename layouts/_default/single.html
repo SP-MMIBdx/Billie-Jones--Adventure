@@ -7,6 +7,20 @@
     {{ end }}
   {{ end }}
 
+  {{ .Content }}
+
+  {{ if .Params.jquery }}
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{{ end }}
+
+<!-- Charger le JS personnalisé -->
+{{ if .Params.js }}
+  {{ $js := resources.Get (printf "js/%s" .Params.js) }}
+  {{ if $js }}
+    <script src="{{ $js.RelPermalink }}"></script>
+  {{ end }}
+{{ end }}
+
 
   {{ if .Params.title }}
     <h1>{{ .Params.title }}</h1>
@@ -16,7 +30,6 @@
     <p class="description">{{ .Params.description }}</p>
   {{ end }}
 
-    {{ .Content }}
 
   {{ if .Params.question }}
     {{ partial "question.html" .Params.question }}
@@ -42,15 +55,5 @@
     {{ partial "buttonaccueil.html" .Params.buttonaccueil }}
   {{ end }}
 
-  {{ if .Params.jquery }}
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-{{ end }}
 
-<!-- Charger le JS personnalisé -->
-{{ if .Params.js }}
-  {{ $js := resources.Get (printf "js/%s" .Params.js) }}
-  {{ if $js }}
-    <script src="{{ $js.RelPermalink }}"></script>
-  {{ end }}
-{{ end }}
 {{ end }}
