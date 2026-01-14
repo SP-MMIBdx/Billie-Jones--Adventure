@@ -51,4 +51,23 @@ body.painting-4 {
   background-repeat: no-repeat;
 }
 
+.Dark{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+      background: radial-gradient(
+        circle at center,
+        rgba(0, 0, 0, 0.3) 0%,      /* Centre plus clair */
+        rgba(0, 0, 0, 0.7) 50%,     /* Milieu */
+        rgba(0, 0, 0, 0.9) 100%     /* Extérieur plus noir */
+    );
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    backdrop-filter: blur(2px);
+}
 

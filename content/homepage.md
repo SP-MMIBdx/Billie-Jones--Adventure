@@ -7,6 +7,9 @@ buttonstart:
   url: "/bonjour"
   text: COMMENCER
 
-bodyclass: "painting-2"
+Dark:
+  dark: .
+
+bodyclass: " painting-1 "
 ---
 <!-- Homepage, painting-5 background test -->

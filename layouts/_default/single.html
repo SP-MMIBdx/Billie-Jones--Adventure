@@ -61,4 +61,8 @@
     {{ partial "buttonaccueil.html" .Params.buttonaccueil }}
   {{ end }}
 
+          {{ if .Params.Dark }}
+    {{ partial "Dark.html" .Params.Dark }}
+  {{ end }}
+
 {{ end }}
