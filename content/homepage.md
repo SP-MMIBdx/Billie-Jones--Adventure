@@ -2,10 +2,10 @@
 title: >-
   La (Probable) Fabuleuse Aventure de Billie Jones
 url: "/"
-description: "Description du jeu"
+description: ""
 buttonstart:
   url: "/bonjour"
-  text: Commencer
+  text: COMMENCER
 
 bodyclass: "painting-2"
 ---
