@@ -15,31 +15,42 @@ body.split-1 {
 
 
 body.painting-1 {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-body.painting-2 {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-body.painting-3 {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-body.painting-4 {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-body.painting-5 {
-  background-image: url("/images/billie-v2.png");
+  background-image: url("/images/tableau foret.svg");
+  width: 100%;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; // optional
-  color: #fff;
+}
+
+body.painting-2 {
+  background-image: url("/images/tableauchateau.svg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.painting-3 {
+  background-image: url("/images/tableau mer.svg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.painting-4 {
+  background-image: url("/images/tableau sanglier.svg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.painting-5 {
+
 }
 
