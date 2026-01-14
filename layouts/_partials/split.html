@@ -1,0 +1,13 @@
+<div class="split-page">
+  {{ if .text }}
+    <p class="split-text">{{ .text }}</p>
+  {{ end }}
+
+  <div class="split-container">
+    {{ range .answers }}
+      <a href="{{ .url }}" class="split-item" style="background-image: url('{{ .image }}');">
+        <span>{{ .text }}</span>
+      </a>
+    {{ end }}
+  </div>
+</div>

@@ -44,6 +44,11 @@
     {{ partial "buttonstart.html" .Params.buttonstart }}
   {{ end }}
 
+  {{ if .Params.split }}
+      {{ partial "split.html" .Params.split }}
+    {{ end }}
+
+
   {{ if .Params.choice }}
     {{ partial "choice.html" .Params.choice }}
   {{ end }}
