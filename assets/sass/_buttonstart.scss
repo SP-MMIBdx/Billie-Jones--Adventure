@@ -1,17 +1,17 @@
+.buttonstart-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .buttonstart {
     color: black;
 
     //background-image: url("/images/bouton commencer et acceuil.svg");
     position: relative;
-    top: 0%;
-    left: 50%;
     z-index: 1;
     padding: 1rem 2rem;
     background-color: #FAEBDC;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: none;
     font-size: 1rem;
     font-family: 'LEMON MILK', sans-serif;
     text-align: center;
