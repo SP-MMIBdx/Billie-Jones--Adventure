@@ -3,11 +3,12 @@
     color: white;
 }
 
-.button-container {
+.button-container{
   display: flex;
   justify-content: center;
   width: 100%;
-}
+  top: 35vh;
+}   
 
 .button {
     color: black;
@@ -15,14 +16,17 @@
     //background-image: url("/images/bouton commencer et acceuil.svg");
     position: relative;
     z-index: 1;
-    padding: 1rem 2rem;
+    padding: 2rem 2.5rem;
     background-color: #FAEBDC;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
     font-family: 'LEMON MILK', sans-serif;
     text-align: center;
     text-decoration: none;
-    border: 3px solid #d19f61;
+    border: 8px solid #d19f61;
     border-radius: 8px;
+    margin: 2rem;
+
 
     &:after {
         content: "";
