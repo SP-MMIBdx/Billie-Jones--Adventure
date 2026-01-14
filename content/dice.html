@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Dice/dice.css">
+</head>
+<body>
+
+    <div class="diceWrap">
+  <div class="dice rolling">
+    <div class="diceFace front"></div>
+    <div class="diceFace up"></div>
+    <div class="diceFace left"></div>
+    <div class="diceFace right"></div>
+    <div class="diceFace bottom"></div>
+    <div class="diceFace back"></div>
+  </div>
+</div>
+
+    <div class="diceWrap2">
+  <div class="dice rolling">
+    <div class="diceFace front"></div>
+    <div class="diceFace up"></div>
+    <div class="diceFace left"></div>
+    <div class="diceFace right"></div>
+    <div class="diceFace bottom"></div>
+    <div class="diceFace back"></div>
+  </div>
+</div>
+
+    <div class="diceWrap3">
+  <div class="dice rolling">
+    <div class="diceFace front"></div>
+    <div class="diceFace up"></div>
+    <div class="diceFace left"></div>
+    <div class="diceFace right"></div>
+    <div class="diceFace bottom"></div>
+    <div class="diceFace back"></div>
+  </div>
+</div>
+
+<div class="controller">
+  <button id="rolling">Toggle Rolling Per Face</button><br />
+  <button id="throw">Roll</button> <span id="diceVal"></span><br />
+  <div class="X">  
+  <input type="range" min="0" max="100" id="rx" value='40'><span id="nx" >0</span><br />
+  <input type="range" min="0" max="100" id="ry" value='35'><span id="ny" >0</span><br />
+  <input type="range" min="0" max="100" id="rz" value='15'><span id="nz" >0</span>
+</div>
+
+  
+</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/Dice/dice.js"></script>
+</body>
+</html>
