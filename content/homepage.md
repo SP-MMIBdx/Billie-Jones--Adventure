@@ -8,4 +8,4 @@ button:
   text: Commencer
 bodyclass: "painting-5"
 ---
-<!-- Homepage -->
+<!-- Homepage, painting-5 background test -->
