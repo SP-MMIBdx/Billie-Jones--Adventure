@@ -1,0 +1,24 @@
+<div class="bonjour-page-wrapper">
+
+  <!-- Top-left branches -->
+  {{ if .svg_top_left }}
+    <img
+      src="{{ .svg_top_left }}"
+      class="bonjour-branches"
+      alt="Branches décoratives">
+  {{ end }}
+
+  <!-- Centered text -->
+  <div class="bonjour-text">
+    <p>{{ .text }}</p>
+  </div>
+
+  <!-- Bottom-right SVG overlay -->
+  {{ if .svg_bottom_right }}
+    <img
+      src="{{ .svg_bottom_right }}"
+      class="bonjour-overlay-svg"
+      alt="Décoration">
+  {{ end }}
+
+</div>

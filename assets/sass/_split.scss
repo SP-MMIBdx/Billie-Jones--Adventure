@@ -1,0 +1,136 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.split-page {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+
+.split-instruction {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-family: 'Coolvetica', sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+  z-index: 3;
+  max-width: 45%;        // allow wrapping
+  word-wrap: break-word; // force line breaks for long text
+  line-height: 1.3;      // better readability
+}
+
+  .split-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap; // always side by side
+  }
+
+  .split-item {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.2s ease, filter 0.2s ease;
+    box-sizing: border-box;
+
+    &:hover {
+      transform: scale(1.02);
+      filter: brightness(1.1);
+    }
+
+    .split-item-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; // descriptions on top
+      align-items: stretch;
+      width: 100%;
+      height: 100%;
+      padding: 5% 3%; // top/side padding
+      box-sizing: border-box;
+    }
+
+    .split-item-description {
+      font-family: 'Coolvetica', sans-serif;
+      font-size: 1.2rem;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+      margin-bottom: auto; // push text downward if needed
+      text-align: left;
+      max-width: 100%;
+      word-wrap: break-word;
+    }
+
+    .split-item-text {
+      font-family: 'LEMON MILK', sans-serif;
+      font-size: 2rem;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+      text-align: center;
+      margin-top: auto; // pushes to bottom inside content
+    }
+  }
+}
+
+// Responsive text scaling only
+@media (max-width: 1024px) {
+  .split-item-description {
+    font-size: 1rem;
+  }
+  .split-item-text {
+    font-size: 1.8rem;
+  }
+  .split-instruction {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .split-item-description {
+    font-size: 0.9rem;
+  }
+  .split-item-text {
+    font-size: 1.5rem;
+  }
+  .split-instruction {
+    font-size: 0.9rem;
+    bottom: 0.5rem;
+    left: 0.5rem;
+  }
+}
+
+.split-overlay-svg {
+  position: absolute;
+  bottom: 0;            // anchor to bottom
+  right: 0;             // anchor to right
+  height: 60%;          // base size (~3x previous)
+  max-height: 75vh;     // prevent it from exceeding viewport height
+  width: auto;          // maintain aspect ratio
+  max-width: 40vw;      // optional limit on width
+  z-index: 4;           // above everything
+  pointer-events: none; // allow clicks through
+  transition: height 0.2s ease, width 0.2s ease; // smooth resize
+}
+
+.split-branches-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: clamp(120px, 25vw, 520px);
+  height: auto;
+
+  z-index: 1;
+  pointer-events: none;
+}
