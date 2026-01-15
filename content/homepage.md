@@ -2,14 +2,11 @@
 title: >-
   La (Probable) Fabuleuse Aventure de Billie Jones
 url: "/"
+layout: simple
 description: ""
-buttonstart:
+suivantbutton:
   url: "/bonjour"
   text: COMMENCER
-
-Dark:
-  dark: .
-
-bodyclass: " painting-1 "
+bodyclass: "painting-1 homepage"
 ---
 <!-- Homepage, painting-5 background test -->

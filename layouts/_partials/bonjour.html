@@ -11,6 +11,11 @@
   <!-- Centered text -->
   <div class="bonjour-text">
     <p>{{ .text }}</p>
+      
+    {{ if .suivantbutton }}
+      {{ partial "suivantbutton.html" .suivantbutton }}
+    {{ end }}
+
   </div>
 
   <!-- Bottom-right SVG overlay -->

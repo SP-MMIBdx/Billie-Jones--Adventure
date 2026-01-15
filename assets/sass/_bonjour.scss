@@ -11,7 +11,7 @@ body {
   inset: 0;
 
   background: rgba(0, 0, 0, 0.7); // adjust darkness here
-  z-index: 0;
+  z-index: -1;
 }
 
 .bonjour-page {
@@ -35,12 +35,17 @@ body {
    Centered text
    ========================= */
 .bonjour-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  max-width: 60ch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  height: 100%;
 
-  transform: translate(-50%, -50%);
+  padding-left: 30px;
+  padding-right: 30px;
+
+  max-width: 60ch;
   text-align: center;
 
   font-family: 'Coolvetica', sans-serif;
@@ -48,6 +53,7 @@ body {
   font-size: clamp(1.4rem, 2.5vw, 1.6rem);
   line-height: 1.4;
 
+  position: relative;
   z-index: 2;
 }
 
@@ -57,7 +63,7 @@ body {
 .bonjour-overlay-svg {
   position: absolute;
   bottom: 0;
-  right: -100px;
+  right: 0px;
 
   width: clamp(300px, 30vw, 600px);
   height: auto;

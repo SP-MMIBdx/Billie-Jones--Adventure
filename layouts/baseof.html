@@ -11,5 +11,15 @@
   <main>
     {{- block "main" . }}{{- end }}
   </main>
+
+  {{ if .Params.js }}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Charger le JS personnalisé -->
+    {{ $js := resources.Get (printf "js/%s" .Params.js) }}
+    {{ if $js }}
+      <script src="{{ $js.RelPermalink }}"></script>
+    {{ end }}
+  {{ end }}
 </body>
 </html>

@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  top: 70vh;
 }
 
 .buttonstart {
@@ -38,19 +37,19 @@
 }
 
 .buttonstart-container {
-position: relative;
-&--branchright {
-    position: absolute;
-    top: 70%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    // add after pseudo-element for decoration
-}
-&--branchleft {
-    position: absolute;
-    top: 70%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    // add after pseudo-element for decoration
-}
+    position: relative;
+    &--branchright {
+        position: absolute;
+        top: 70%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        // add after pseudo-element for decoration
+    }
+    &--branchleft {
+        position: absolute;
+        top: 70%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        // add after pseudo-element for decoration
+    }
 }

@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+  <div class="simple-page-container">
+    {{ if .Params.title }}
+      <h1 class="main-title">{{ .Params.title | markdownify }}</h1>
+    {{ end }}
+  
+    {{ if .Params.description }}
+      <p class="description">{{ .Params.description | markdownify }}</p>
+    {{ end }}
+  
+    {{ if .Params.suivantbutton }}
+      {{ partial "suivantbutton.html" .Params.suivantbutton }}
+    {{ end }}
+  </div>
+
+{{ end }}

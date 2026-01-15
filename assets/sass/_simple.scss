@@ -1,0 +1,10 @@
+.simple-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    height: 100vh;
+    padding-left: 30px;
+    padding-right: 30px;
+}

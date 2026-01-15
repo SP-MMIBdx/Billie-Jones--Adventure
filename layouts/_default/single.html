@@ -1,26 +1,8 @@
 {{ define "main" }}
 
-  {{ if .Params.css }}
-    {{ $css := resources.Get (printf "css/%s" .Params.css) }}
-    {{ if $css }}
-      <link rel="stylesheet" href="{{ $css.RelPermalink }}">
-    {{ end }}
+  {{ if .Params.dice }}
+    {{ partial "dice-roller.html" }}
   {{ end }}
-
-  {{ .Content }}
-
-  {{ if .Params.jquery }}
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-{{ end }}
-
-<!-- Charger le JS personnalisé -->
-{{ if .Params.js }}
-  {{ $js := resources.Get (printf "js/%s" .Params.js) }}
-  {{ if $js }}
-    <script src="{{ $js.RelPermalink }}"></script>
-  {{ end }}
-{{ end }}
-
 
   {{ if .Params.title }}
     <h1 class="main-title">{{ .Params.title | markdownify }}</h1>
@@ -39,38 +21,34 @@
     {{ partial "button.html" .Params.button }}
   {{ end }}
 
-    {{ if .Params.buttonstart }}
+  {{ if .Params.buttonstart }}
    <!-- <div class="buttonstart-container buttonstart-container--branchright"> -->
     {{ partial "buttonstart.html" .Params.buttonstart }}
   {{ end }}
 
   {{ if .Params.split }}
-      {{ partial "split.html" .Params.split }}
-    {{ end }}
+    {{ partial "split.html" .Params.split }}
+  {{ end }}
     
-{{ if .Params.bonjour }}
-  {{ partial "bonjour.html" .Params.bonjour }}
-{{ end }}
+  {{ if .Params.bonjour }}
+    {{ partial "bonjour.html" .Params.bonjour }}
+  {{ end }}
 
   {{ if .Params.choice }}
     {{ partial "choice.html" .Params.choice }}
   {{ end }}
 
 
-    {{ if .Params.suivantbutton }}
+  {{ if .Params.suivantbutton }}
     {{ partial "suivantbutton.html" .Params.suivantbutton }}
   {{ end }}
 
-      {{ if .Params.buttonsuivantcache }}
+  {{ if .Params.buttonsuivantcache }}
     {{ partial "buttonsuivantcache.html" .Params.buttonsuivantcache }}
   {{ end }}
 
-        {{ if .Params.buttonaccueil }}
+  {{ if .Params.buttonaccueil }}
     {{ partial "buttonaccueil.html" .Params.buttonaccueil }}
-  {{ end }}
-
-          {{ if .Params.Dark }}
-    {{ partial "Dark.html" .Params.Dark }}
   {{ end }}
 
 {{ end }}
