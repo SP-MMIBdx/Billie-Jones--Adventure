@@ -9,6 +9,6 @@ bonjour:
   svg_top_left: "/images/branches.svg"
   # Next button
   suivantbutton:
-      url: "/1-1"
+      url: "/0-1"
       text: Suivant
 ---
