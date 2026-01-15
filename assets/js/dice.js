@@ -86,7 +86,11 @@ document.getElementById('throw').addEventListener('click', () => {
     setTimeout(() => {
         const total = diceVal1 + diceVal2 + diceVal3;
         diceValSpan.textContent = `${diceVal1} + ${diceVal2} + ${diceVal3} = ${total}`;
+                if (total >= 10) {
+            window.location.href = "/";
+        }
     }, 700);
+
 });
 
 // Changer le type de dé (appliqué aux deux dés)
@@ -100,3 +104,4 @@ document.getElementById('diceType').addEventListener('change', (e) => {
         dice3.classList.add(e.target.value);    
     }
 });
+
