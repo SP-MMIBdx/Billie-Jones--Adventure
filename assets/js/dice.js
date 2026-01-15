@@ -86,12 +86,23 @@ document.getElementById('throw').addEventListener('click', () => {
     setTimeout(() => {
         const total = diceVal1 + diceVal2 + diceVal3 + currentBonus;
         diceValSpan.textContent = `${diceVal1} + ${diceVal2} + ${diceVal3} + ${currentBonus} = ${total}`;
+
+        console.log(total)
         if (total >= 10) {
-            window.location.href = "/";
+            goToEndScreen('victory');
+        } else {
+            goToEndScreen('defeat');
         }
-    }, 700);
+    }, 2000);
 
 });
+
+function goToEndScreen(resultType) {
+    let params = new URLSearchParams(document.location.search);
+    let url = params.get(resultType);
+    window.location.href = "/" + url;
+}
+
 
 // Changer le type de dé (appliqué aux deux dés)
 document.getElementById('diceType').addEventListener('change', (e) => {
