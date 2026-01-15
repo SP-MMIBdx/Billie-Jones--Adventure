@@ -84,8 +84,8 @@ document.getElementById('throw').addEventListener('click', () => {
     }, 50);
     
     setTimeout(() => {
-        const total = diceVal1 + diceVal2 + diceVal3;
-        diceValSpan.textContent = `${diceVal1} + ${diceVal2} + ${diceVal3} = ${total}`;
+        const total = diceVal1 + diceVal2 + diceVal3 + currentBonus;
+        diceValSpan.textContent = `${diceVal1} + ${diceVal2} + ${diceVal3} + ${currentBonus} = ${total}`;
     }, 700);
 });
 

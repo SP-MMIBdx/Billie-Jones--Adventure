@@ -21,5 +21,11 @@
       <script src="{{ $js.RelPermalink }}"></script>
     {{ end }}
   {{ end }}
+
+  <!-- Charger le JS personnalisé -->
+  {{ $app := resources.Get "js/app.js" }}
+  {{ if $app }}
+    <script src="{{ $app.RelPermalink }}"></script>
+  {{ end }}
 </body>
 </html>

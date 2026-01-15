@@ -1,5 +1,5 @@
 <div class="button-container">
-  <a href="{{ .url }}" class="button">
+  <a href="{{ .url }}" class="button" {{ if .bonus }} data-bonus="{{ .bonus }}" {{ end }}>
     <span>{{ .text }}</span>
   </a>
 </div>
