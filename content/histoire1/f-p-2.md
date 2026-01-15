@@ -5,7 +5,7 @@ title: >-
     BILLIE JONES se fait trancher la main et finit recluS dans la forêt à vivre en harmonie avec les sangliers jusqu’à un malencontreux affrontement avec un sanglier qui lui coûte son autre main.
 url: "/f-p-2/"
 layout: simple
-description: "Remonte dans le temps et change le destin de Billie Jones en faisant de nouveaux choix lors d’une nouvelle aventure."
+description: "Remontez dans le temps et changez le destin de Billie Jones en faisant de nouveaux choix lors d’une nouvelle aventure."
 suivantbutton:
   url: "/"
   text: Accueil
