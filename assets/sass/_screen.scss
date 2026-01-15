@@ -59,9 +59,9 @@ body.painting-4 {
     height: 100%;
       background: radial-gradient(
         circle at center,
-        rgba(0, 0, 0, 0.3) 0%,      /* Centre plus clair */
-        rgba(0, 0, 0, 0.7) 50%,     /* Milieu */
-        rgba(0, 0, 0, 0.9) 100%     /* Extérieur plus noir */
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.7) 50%,
+        rgba(0, 0, 0, 0.9) 100%
     );
     backdrop-filter: blur(5px);
     display: flex;
