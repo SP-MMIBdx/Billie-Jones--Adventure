@@ -23,16 +23,16 @@
 
 
   {{ if .Params.title }}
-    <h1 class="main-title">{{ .Params.title }}</h1>
+    <h1 class="main-title">{{ .Params.title | markdownify }}</h1>
   {{ end }}
 
   {{ if .Params.description }}
-    <p class="description">{{ .Params.description }}</p>
+    <p class="description">{{ .Params.description | markdownify }}</p>
   {{ end }}
 
 
   {{ if .Params.question }}
-    {{ partial "question.html" .Params.question }}
+    {{ partial "question.html" .Params.question | safeHTML }}
   {{ end }}
 
   {{ if .Params.button }}
