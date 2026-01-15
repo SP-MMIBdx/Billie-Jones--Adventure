@@ -95,17 +95,20 @@
 }
 
 .suivantbutton {
-  display: inline-block;          // allows margin auto
-  padding: 1rem 2rem;
-  background-color: #FAEBDC;
-  color: black;
-  font-family: 'LEMON MILK', sans-serif;  // your title font
-  font-size: 1rem;
-  text-align: center;
-  text-decoration: none;
-  border: 3px solid #d19f61;
-  border-radius: 8px;
-  position: relative;
+    color: black;
+
+    //background-image: url("/images/bouton commencer et acceuil.svg");
+    position: relative;
+    z-index: 1;
+    padding: 1.5rem 1rem;
+    background-color: #FAEBDC;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'LEMON MILK', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border: 8px solid #d19f61;
+    border-radius: 8px;
   transition: transform 0.12s ease, background-color 0.12s ease;
 
   &:active {
