@@ -1,7 +1,7 @@
 ---
 title: >- 
 url: "/Test/"
-choice:
+question:
     text: "image"
 ---
 
