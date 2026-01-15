@@ -31,13 +31,15 @@
     border: 8px solid #d19f61;
     border-radius: 8px;
 
+    
+
 
     &:after {
         content: "";
-        background-image: url("/images/bouton commencer et acceuil.svg");
+        background-image: url("/images/branchedroite.svg");
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 8%;
+        right: 5%;
         width: 40PX;
         height: 100%;
         background-size: contain;
