@@ -1,11 +1,11 @@
 ---
 title: >- 
     Combat
-url: "/1-6-6/"
+url: "/Combat/"
 description: "Lance les dés Si tu fais 10 ou plus, tu gagnes Si tu fais moins de 10, tu perds"
 layout: simple
 suivantbutton:
-  url: "/dice"
+  url: "/dice?victory=f-g-1&defeat=f-p-1"
   text: Suivant
 bodyclass: "painting-4"
 ---
