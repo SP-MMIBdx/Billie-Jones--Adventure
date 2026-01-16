@@ -49,30 +49,21 @@ document.querySelectorAll('.controller input[type=range]').forEach(slider => {
     slider.addEventListener('input', setDice1);
 });
 
-// Toggle rolling animation pour les deux dés
-document.getElementById('rolling').addEventListener('click', () => {
-    dice1.classList.remove('throw');
-    dice1.classList.toggle('rolling');
-    dice2.classList.remove('throw');
-    dice2.classList.toggle('rolling');
-    dice3.classList.remove('throw');
-    dice3.classList.toggle('rolling');
-});
 
 // Lancer les deux dés
 document.getElementById('throw').addEventListener('click', () => {
     // Dé 1
     const diceVal1 = Math.floor(Math.random() * 6) + 1;
-    dice1.classList.remove('throw', 'rolling');
+    dice1.classList.remove('throw');
     setVal(dice1, diceVal1);
     
     // Dé 2
     const diceVal2 = Math.floor(Math.random() * 6) + 1;
-    dice2.classList.remove('throw', 'rolling');
+    dice2.classList.remove('throw');
     setVal(dice2, diceVal2);
 
     const diceVal3 = Math.floor(Math.random() * 6) + 1;
-    dice3.classList.remove('throw', 'rolling');
+    dice3.classList.remove('throw');
     setVal(dice3, diceVal3);
     
     diceValSpan.textContent = '';
